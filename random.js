@@ -56,8 +56,7 @@
       $title.textContent = '吃啥？'
       $button.textContent = '停止'
       timer = setInterval(function () {
-        var r = Math.floor(Math.random() * list.length)
-        var food = list[r - 1]
+        var food = list[Math.floor(Math.random() * list.length)]
         $what.textContent = food
 
         var tag = document.createElement('span')
